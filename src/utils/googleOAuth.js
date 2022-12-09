@@ -7,7 +7,7 @@ const passport=require("passport");
 passport.use(new GoogleStrategy({
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SCERET,
-    callbackURL: "http://localhost:8080/users/auth/google/callback"
+    callbackURL: "https://blogapplicationserver-mzdy.onrender.com/users/auth/google/callback"
   },
   async function(accessToken, refreshToken, profile, cb) {
 
